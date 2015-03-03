@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoppingCart">
+
+<head>
+
+    <title>Bootstrap Shop Cart</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-top: 50px;
+        }
+        
+        #divTotal {
+            background-color: green;
+        }
+        
+        .affix {
+            right: 0px;
+        }
+        
+        .affix-top {
+            right: 0px;
+            position: fixed;
+        }
+        
+        .scroll-debug {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div ng-view></div>
+    <script type="text/javascript" src="public/script/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script src="public/cart/cart.js"></script>
+    <script src="public/checkout/checkout.js"></script>
+    <script src="public/app.js"></script>
+</body>
+
+</html>
